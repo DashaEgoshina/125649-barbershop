@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
+    <title>Средства для ухода</title>
   </head>
   <body>
   <header class="main-header">
@@ -35,97 +35,141 @@
       </div>
   </header>
 
+
+
 <main class="container">
+    <div class="content-title">
    <h1> Средства для ухода </h1>
-    <div class="breadcrumbs">
-        <a href="#"> главная </a>
-        <a href="#"> магазин </a>
-        <a href="#"> средства для ухода </a>
-    </div>
-    <section class="brands">
-    <h2> производители: </h2>
-        <label> baxter of california
-        <input type="radio" checked>
-        </label> <br>
-        <label> mr natty
-        <input type="radio">
-        </label><br>
-        <label> suavecito
-        <input type="radio" checked>
-        </label><br>
-        <label> malin+goetz
-            <input type="radio">
-        </label><br>
-        <label> murray's
-            <input type="radio">
-        </label><br>
-        <label> emerican crew
-            <input type="radio" checked>
-        </label>
+    <ul class="breadcrumbs">
+        <li> <a href="#">главная</a> </li>
+        <li> <a href="#">магазин</a> </li>
+        <li> <a class="active" href="#">средства для ухода</a> </li>
+        </ul>
+        </div>
 
-<h2> группы товаров: </h2>
-        <label> бритвенные принадлежности
-            <input type="radio" checked>
-        </label>
-        <label> средства для ухода
-            <input type="radio">
-        </label>
-        <label> аксессуары
-            <input type="radio">
-        </label>
 
-<a class="button" href="#"> показать </a>
+    <section class="content">
 
+
+        <form class="filter-items">
+        <div class="filter-brands">
+    <h2 class="index-content-title">производители:</h2>
+
+       <div>
+        <label for="baxter-of-california">baxter of california</label>
+        <input type="radio" id="baxter-of-california" checked>
+       </div>
+
+        <div>
+        <label for="mr-natty">mr natty</label>
+        <input type="radio" id="mr-natty">
+        </div>
+
+        <div>
+        <label for="suavecito">suavecito</label>
+        <input type="radio" id="suavecito" checked>
+        </div>
+
+        <div>
+        <label for="malin+goetz">malin+goetz</label>
+        <input type="radio" id="malin+goetz">
+        </div>
+
+        <div>
+        <label for="murray's">murray's</label>
+        <input type="radio" id="murray's">
+        </div>
+
+        <div>
+        <label for="american crew">american crew</label>
+        <input type="radio" id="american crew" checked>
+        </div>
+            </div>
+
+
+<div class="filter-group">
+<h2 class="index-content-title">группы товаров:</h2>
+        <div>
+        <label for="бритвенные-принадлежности">бритвенные принадлежности</label>
+        <input type="radio" id="бритвенные-принадлежности"checked>
+        </div>
+
+        <div>
+        <label for="средства-для-ухода">средства для ухода</label>
+        <input type="radio" id="средства-для-ухода">
+        </div>
+
+        <div>
+        <label for="аксессуары">аксессуары<label>
+        <input type="radio" id="аксессуары">
+        </div>
+            <div>
+
+<a class="button" href="#">показать</a>
+    </form>
+
+
+    <section class="catalog">
+
+        <article class="catalog-item">
+           <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+           <a class="catalog-item-title" href="#"> <h3>Набор для путешествий<span>"Baxter of california"</span></h3></a>
+           <div class="catalog-item-buy"><span class="price">2900 руб.</span>
+           <a class="button" href="#">купить</a>
+           </div>
+        </article>
+
+        <article class="catalog-item">
+            <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+            <a class="catalog-item-title" href="#"> <h3>Увлажняющий кондиционер<span>"Baxter of california"</span> </h3></a>
+            <div class="catalog-item-buy"><span class="price">750 руб.</span>
+            <a class="button" href="#">купить</a>
+            </div>
+        </article>
+
+        <article class="catalog-item">
+            <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+            <a class="catalog-item-title" href="#"> <h3>Гель для волос <span>"suavecito"</span></h3></a>
+            <div class="catalog-item-buy"><span class="price">290 руб.</span>
+            <a class="button" href="#">купить</a>
+                </div>
+        </article>
+
+        <article class="catalog-item">
+            <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+            <a class="catalog-item-title" href="#"> <h3>Глина для укладки волос <span>"american crew"</span></h3></a>
+            <div class="catalog-item-buy"><span class="price">500 руб.</span>
+            <a class="button" href="#">купить</a>
+                </div>
+        </article>
+
+        <article class="catalog-item">
+            <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+            <a class="catalog-item-title" href="#"> <h3>Гель для волос <span>"american crew"</span></h3></a>
+            <div class="catalog-item-buy"><span class="price">300 руб.</span>
+            <a class="button" href="#">купить</a>
+                </div>
+        </article>
+
+        <article class="catalog-item">
+            <a class="catalog-item-img" href="#">  <img src="http://placehold.it/150x100"> </a>
+            <a class="catalog-item-title" href="#"> <h3>Набор для бритья <span>"Baxter of california"</span></h3></a>
+            <div class="catalog-item-buy"><span class="price">3900 руб.</span>
+            <a class="button" href="#">купить</a>
+                </div>
+        </article>
     </section>
-    <section class="items">
-        <article class="item">
-          <a href="#">  <img src="http://placehold.it/150x100"> </a>
-           <a href="#"> <h1> Набор для путешествий "Baxter of california"</h1> </a>
-            <span class="price"> 2900 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
 
-        <article class="item">
-            <a href="#">  <img src="http://placehold.it/150x100"> </a>
-            <a href="#"> <h1> Увлажняющий кондиционер "Baxter of california" </h1> </a>
-            <span class="price"> 750 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
 
-        <article class="item">
-            <a href="#">  <img src="http://placehold.it/150x100"> </a>
-            <a href="#"> <h1> гель для волос "suavecito"</h1> </a>
-            <span class="price"> 290 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
 
-        <article class="item">
-            <a href="#">  <img src="http://placehold.it/150x100"> </a>
-            <a href="#"> <h1> глина для укладки волос "american crew" </h1> </a>
-            <span class="price"> 500 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
+    <ul class="paginator">
+        <li class="paginator-icon"> <a href="#">1</a> </li>
+        <li class="paginator-icon"> <a class="active" href="#">2</a> </li>
+        <li class="paginator-icon"> <a href="#">3</a> </li>
+        <li class="paginator-icon"> <a href="#">4</a> </li>
+    </ul>
 
-        <article class="item">
-            <a href="#">  <img src="http://placehold.it/150x100"> </a>
-            <a href="#"> <h1> гель для волос "american crew"</h1> </a>
-            <span class="price"> 300 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
-
-        <article class="item">
-            <a href="#">  <img src="http://placehold.it/150x100"> </a>
-            <a href="#"> <h1> Набор для бритья "Baxter of california"</h1> </a>
-            <span class="price"> 3900 руб. </span>
-            <a class="button" href="#"> купить </a>
-        </article>
-    </section>
-    <div class="paginator">
-        <a class="current" href="#"> 1 </a>
-        <a class="disabled" href="#"> 2 </a>
-        <a class="current" href="#"> 3 </a>
-        <a class="current" href="#"> 4 </a>
-</div>
+</section>
 </main>
 
   <footer class="main-footer">
@@ -145,6 +189,7 @@
           <section class="footer-copyright">
               <p>Разработано:</p>
               <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </section>
           </section>
       </div>
   </footer>
