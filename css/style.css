@@ -1,9 +1,116 @@
+
+.main-header .container{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 70px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.main-navigation ul{
+    display: flex;
+}
+
+.main-navigation li{
+    padding-right: 40px;
+}
+
+.user-block a{
+    padding-left: 210px;
+}
+
+main.container{
+    padding-left: 130px;
+    padding-right: 130px;
+    background-image: url("barbershop-index.png");
+}
+
+.container .content-title{
+    padding-top: 60px;
+}
+
+.breadcrumbs{
+    display: flex;
+    padding-left: 0;
+}
+.breadcrumbs li{
+    padding-right: 40px;
+    list-style: none;
+}
+.breadcrumbs a{
+    text-decoration: none;
+}
+
+section.content {
+    display: flex;
+}
+
+section.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+}
+
+.filter-checkbox, .filter-radio {
+    padding-bottom: 27px;
+}
+
+article.catalog-item{
+margin:10px;
+    width:220px;
+    height: 286px;
+    background-color: white;
+}
+.catalog-item-title  {
+text-transform: none;}
+
+
+.paginator {
+display: flex;
+align-self: flex-end;
+}
+
+.paginator a{
+    text-decoration: none;
+}
+.paginator li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container.container-index  {
+    background-image: url("barbershop-index.jpg");
+}
+
+
+
 body {
     font-size: 14px;
     line-height: 24px;
     color: #000000;
     font-weight: bold;
-    font-family: PT Sans Narrow Bold;
+    font-family: "PT Sans Narrow Bold";
+    margin:0;
+    padding: 0;
+    text-transform: uppercase;
 }
 
 
@@ -25,18 +132,27 @@ body {
 
 }
 
-.index-content .index-content-title {
-    font-size: 30px;
-    line-height: auto;
-    color: #000000;
-}
-
 .filter-items .index-content-title {
     font-size: 24px;
     line-height: auto;
+    padding-bottom: 40px;
 }
 
 .price-list-title {
     font-size: 46px;
     line-height: auto;
 }
+
+
+.index-content.index-content-title, .content-title h1 {
+    font-size: 30px;
+    line-height: auto;
+    color: #000000;
+}
+
+
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url(/fonts/ptsansnarrowbold.woff);
+
