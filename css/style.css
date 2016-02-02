@@ -126,7 +126,7 @@ font-size: 0;
 
 .catalog {
     font-size:0;
-    margin-bottom 20px;
+    margin-bottom: 20px;
 }
 
 .catalog-item {
@@ -258,7 +258,8 @@ a.btn{
 }
 .item-small-img li{
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 17px;
+    vertical-align: top;
 }
 
 .item-small-img li:last-child {
