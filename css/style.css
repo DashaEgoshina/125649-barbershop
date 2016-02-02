@@ -20,12 +20,12 @@ ul {
 }
 
 h1{
-    font-size: 30px;
     line-height: 40px;
     color: #000000;
     margin: 0;
     margin-bottom: 20px;
 }
+
 
 .container {
     margin: 0 auto;
@@ -88,7 +88,7 @@ h1{
 
 
 .content-title {
-    padding: 55px 0 50px 0;
+    padding: 50px 0;
 }
 
 
@@ -126,6 +126,7 @@ font-size: 0;
 
 .catalog {
     font-size:0;
+    margin-bottom 20px;
 }
 
 .catalog-item {
@@ -169,8 +170,6 @@ font-size: 0;
     margin-right: 5px;
 }
 
-
-
 body {
     font-size: 14px;
     line-height: 24px;
@@ -178,10 +177,8 @@ body {
     font-weight: bold;
     font-family: "PT Sans Narrow Bold", sans-serif;
     text-transform: uppercase;
-    min-width: 1122px;
-    min-height: 1750px;
+    background: url("../img/barbershop-index.png") 0 0 repeat;
 }
-
 
 .main-header {
     background-color: #000000;
@@ -247,19 +244,25 @@ a.btn{
 
 .item-description{
     display: block;
+    float: right;
+    width: 390px;
 }
 .item-gallery {
     float: left;
     display: block;
     margin-right: 70px;
+    width: 460px;
 }
 .item-big-img{
     margin-bottom: 10px;
 }
 .item-small-img li{
-    display: block;
-    float: left;
-    padding-right: 20px;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.item-small-img li:last-child {
+    padding-right: 0px;
 }
 
 .item-info{
@@ -304,9 +307,6 @@ a.button {
     text-align: center;
 }
 
-body {
-    background: url("../img/barbershop-index.png");
-}
 .index-logo {
     width: 368px;
     min-height: 204px;
@@ -354,12 +354,13 @@ body {
     float: right;
     display: inline-block;
     vertical-align: top;
+    width: 460px;
+    margin-left: 100px;
 }
 .table{
     border-collapse: collapse;
     width: 460px;
     text-align: left;
-    margin-left: 270px;
     vertical-align: top;
 }
 
@@ -378,9 +379,6 @@ table caption {
 .item-set li{
     padding-bottom: 15px;
 }
-.column{
-    padding-left: 40px;
-}
 
 
 td.column-2{
@@ -391,12 +389,16 @@ td.column-2{
     float:left;
     display: inline-block;
     vertical-align: top;
+    width: 380px;
 }
 
 section.about, .about-bottom {
     display: inline-block;
 }
 
-.about.index-content-title{
-    margin-bottom: 40px;
+.about.index-content-title, .about-bottom h2.index-content-title{
+    margin-bottom: 30px;
+}
+h2{
+    margin: 0;
 }
