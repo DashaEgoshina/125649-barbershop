@@ -353,8 +353,6 @@ a.button {
 
 .about-right {
     float: right;
-    display: inline-block;
-    vertical-align: top;
     width: 460px;
     margin-left: 100px;
 }
@@ -388,8 +386,6 @@ td.column-2{
 
 .about-left {
     float:left;
-    display: inline-block;
-    vertical-align: top;
     width: 380px;
 }
 
