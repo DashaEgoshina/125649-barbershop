@@ -4,6 +4,11 @@
     src: url("../fonts/ptsansnarrowbold.woff");
 }
 
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrow.woff");
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -24,6 +29,7 @@ h1{
     color: #000000;
     margin: 0;
     margin-bottom: 20px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 }
 
 
@@ -39,281 +45,156 @@ h1{
     clear: both;
 }
 
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    background: #f6f3f0 url("../img/barbershop-index.png") 0 0 repeat;
+    min-width: 960px;
+}
+
+body.index {
+    background: #000000 url("../img/barbershop-index.jpg") no-repeat center top;
+    color: #ffffff;
+}
+
 
 /* header */
 
+
 .main-header {
     min-height: 70px;
+    background-color: #000000;
+    margin-bottom: 60px;
+    color: #ffffff;
 }
 
 .logo {
     width: 150px;
     float: left;
     text-align: center;
-    padding-top: 26px;
+    padding-top:25px;
+    padding-bottom:13px;
+}
+
+.logo img{
+    width:111px;
+    height:24px;
 }
 
 .main-navigation {
     width: 630px;
     float: left;
     font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigation li {
-   display: inline-block;
+    display: inline-block;
     vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .main-navigation a{
     padding: 25px 20px;
     display: block;
     font-size: 16px;
-    line-height: 26px;
     color: #ffffff;
 }
 
-.user-block {
-    width: 140px;
-    float: right;
-}
-
-.user-block a {
-    padding: 25px 20px;
-    display: block;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-/* каталог */
-
-
-.content-title {
-    padding: 50px 0;
+.main-navigation a:hover {
+    background: #242424;
 }
 
 
-.breadcrumbs {
-font-size: 0;
+
+.main-navigation .active {
+    position: relative;
+
+    background-color: none;
 }
 
-.breadcrumbs li {
-    display: inline-block;
-    vertical-align: top;
+.main-navigation .active a:hover {
+    background: none;
 }
 
-.breadcrumbs a{
-    font-size: 14px;
-    padding-right: 40px;
-    color: #000000;
-}
-.breadcrumbs a.active{
-    color: #aba9a7;
-}
+.main-navigation .active::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
 
-.filter-items{
-    width: 220px;
-    float: left;
-}
+    height: 5px;
 
-.catalog-right {
-    width: 700px;
-    float: right;
-}
-
-.filter-checkbox, .filter-radio {
-    padding-bottom: 27px;
-}
-
-.catalog {
-    font-size:0;
-    margin-bottom: 20px;
-}
-
-.catalog-item {
-    width: 220px;
-    min-height: 286px;
-    background-color: white;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0 20px 20px 0;
-}
-
-.catalog-item:nth-child(3n){
-    margin-right:0 ;
-}
-
-.paginator a {
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
-    background-color: #000000;
-    width: 45px;
-    min-height: 25px;
-    text-align: center;
-    padding: 10px 0px;
-}
-.paginator a.active {
-    color: #000000;
     background-color: #ffffff;
 }
 
-
-.paginator li {
-    list-style: none;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    margin-right: 5px;
-}
-
-body {
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans Narrow Bold", sans-serif;
-    text-transform: uppercase;
-    background: url("../img/barbershop-index.png") 0 0 repeat;
-}
-
-.main-header {
-    background-color: #000000;
-}
-
-.features-item .features-name {
-    font-size: 30px;
-    line-height: 40px;
-    color: #f7f4f1;
-
-}
-
-.filter-items .index-content-title {
-    font-size: 24px;
-    line-height: 34px;
-    padding-bottom: 40px;
-}
-
-.price-list-title {
-    font-size: 46px;
-    line-height: 56px;
-}
-
-/*  футер */
-
-.main-footer {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    margin-top: 65px;
-    background-color: #aba9a7;
-}
-.footer-contacts {
-    float: left;
-    width: 320px;
-    margin-right: 60px;
-}
-
-.footer-social {
-    float: left;
-    width: 180px;
-}
-
-.social-btn{
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: #000000;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.footer-copyright {
-    float: right;
-    width: 180px;}
-
-a.btn{
-    display: inline-block;
-    width: 140px;
-    height: 45px;
-    background: #000000;
-    vertical-align: middle;
-}
-
-.item-description{
+.main-navigation .active span {
     display: block;
+    padding: 25px 20px;
+}
+
+.user-block {
+   max-width: 140px;
     float: right;
-    width: 390px;
 }
-.item-gallery {
-    float: left;
-    display: block;
-    margin-right: 70px;
-    width: 460px;
-}
-.item-big-img{
-    margin-bottom: 10px;
-}
-.item-small-img li{
+
+.login {
     display: inline-block;
-    padding-right: 17px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    padding: 25px 20px;
+    padding-left: 50px;
     vertical-align: top;
 }
 
-.item-small-img li:last-child {
-    padding-right: 0px;
+.login:hover, .logo:hover{
+    background-color: #242424;
 }
 
-.item-info{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
 
-}
-
-.exist {
-    margin-right: 175px;
-}
-
-.article{
-    color: #aeaeae;
-}
-
-.item-buy{
-    margin-bottom: 70px;
-}
-.item-set{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 18px;
+    height: 18px;
+    background: transparent url("../img/sprite.png") no-repeat;
+    opacity: 0.3;
+    background-position: -5px -96px;
 }
 
-a.button {
-    display: inline-block;
-    width: 80px;
-    height: 45px;
-    background: #000000;
-    color: #ffffff;
-    vertical-align: middle;
-    text-align: center;
+
+.login:hover::before {
+    opacity: 1;
 }
 
-.price{
-    display: inline-block;
-    width: 110px;
-    height: 45px;
-    background: #e5e5e5;
-    color: #000000;
-    vertical-align: middle;
-    text-align: center;
-}
+
+
+
+/* index */
 
 .index-logo {
     width: 368px;
-    min-height: 204px;
-    margin-right: auto;
-    margin-left: auto;
+    height: 204px;
+    margin: 0 auto;
     margin-bottom: 25px;
+}
+
+
+
+.index-logo img {
+    width: 368px;
+    height: 204px;
 }
 
 .features {
@@ -324,15 +205,52 @@ a.button {
     float: left;
     width: 300px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .features-item:last-child {
     margin-right: 0;
 }
 
+.features-name {
+    position: relative;
+
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+
+}
+
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
 .index-content {
     margin-bottom: 35px;
     padding: 50px 80px;
+    color: #000000;
+    background: url("../img/layer 17 copy.png") no-repeat center,
+    #f8f5f2 url("../img/barbershop-index.png");
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 }
 
 .index-content-left {
@@ -346,26 +264,529 @@ a.button {
 
 }
 
-.price-list-title {
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview time {
+    text-transform: none;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
     text-align: center;
-    margin-bottom: 56px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+
+.gallery {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+
+/* shop */
+
+.features-item .features-name {
+    font-size: 30px;
+    line-height: 40px;
+    color: #f7f4f1;
+
+}
+
+.filter-items .index-content-title {
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.content-title {
+  padding-top: 0;
+    padding-bottom: 50px;
+}
+
+
+
+.filter-items{
+    width: 220px;
+    float: left;
+}
+
+.catalog-right {
+    width: 700px;
+    float: right;
+}
+
+.filter-checkbox, .filter-radio {
+    padding-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.filter-checkbox label:hover, .filter-radio label:hover{
+    color: #663d15;
+}
+
+.filter-checkbox:disabled, .filter-radio:disabled{
+    opacity: 0.5;
+}
+
+.filter-checkbox input, .filter-radio input{
+    display: none;
+}
+
+
+.filter-checkbox::before, .filter-radio::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    display: block;
+    cursor: pointer;
+    background: url("../img/sprite.png");
+    background-position: -7px -7px;
+
+}
+
+.filter-radio::before{
+    border-radius: 50%;
+}
+
+
+.filter-group, .filter-brands{
+    margin-bottom: 30px;
+}
+
+
+
+.catalog {
+    font-size:0;
+    margin-bottom: 30px;
+}
+
+.catalog-item {
+    width: 220px;
+    min-height: 286px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right:0 ;
+}
+
+
+a.catalog-item-title{
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-align: left;
+}
+
+.catalog-item-title h3{
+    text-transform: none;
+    padding-left: 15px;
+}
+.catalog-item-title span{
+    text-transform: uppercase;
+}
+
+
+.catalog-item-buy{
+    padding-left: 15px;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 15px;
+
+}
+
+span.price{
+padding: 10px 23px;
+}
+
+
+
+.paginator a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    width: 45px;
+    min-height: 25px;
+    text-align: center;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+.paginator a.active {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: default;
+}
+
+.paginator a:hover:not(.active) {
+    background-color: #663d15;
+}
+
+.paginator li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    margin-right: 5px;
+}
+
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow Bold";
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 18px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+    display: none;
+}
+
+/*  item */
+
+.item-description{
+    display: block;
+    float: right;
+    width: 390px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.item-gallery {
+    float: left;
+    display: block;
+    margin-right: 70px;
+    width: 460px;
+
+}
+
+.item-gallery img{
+    box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.item-big-img{
+    margin-bottom: 10px;
+}
+.item-small-img li{
+    display: inline-block;
+    padding-right: 17px;
+    vertical-align: top;
+
+}
+
+.item-small-img li:last-child {
+    padding-right: 0px;
+}
+
+.item-info{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.exist {
+    margin-right: 175px;
+}
+
+.article{
+    color: #aeaeae;
+}
+
+
+.item-set-small li{
+    padding-bottom: 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.item-set-small li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.item-buy{
+margin-bottom: 70px;
+
+}
+
+
+
+.price{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #e5e5e5;
+    color: #000000;
+    vertical-align: top;
+    text-align: center;
+
+}
+
+
+
+a.button {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 23px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a.button:hover,
+a.button:active {
+    background-color: #663d15;
+}
+
+a.button.disabled,
+a.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+a.button.disabled:hover,
+a.button:disabled:hover {
+    background-color: #000000;
+}
+
+/*  prise-list*/
+
+
+
+.price-list-title {
+
+    margin-bottom: 65px;
+font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    text-align: center;
+}
+
+.price-list-title h2 {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    margin: 0;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #f8f3f0 url("../img/barbershop-index.png") repeat;
+}
+
+.price-list-title::after {
+    content: "";
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    display: block;
+    border-bottom: 2px solid #000000;
 }
 
 .about-right {
     float: right;
     width: 460px;
     margin-left: 100px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 .table{
     border-collapse: collapse;
     width: 460px;
     text-align: left;
     vertical-align: top;
+
 }
 
 table caption {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .table td {
@@ -377,8 +798,23 @@ table caption {
 
 .item-set li{
     padding-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
 }
 
+
+.item-set li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
 
 td.column-2{
     text-align: center;
@@ -387,6 +823,9 @@ td.column-2{
 .about-left {
     float:left;
     width: 380px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 section.about, .about-bottom {
@@ -399,3 +838,128 @@ section.about, .about-bottom {
 h2{
     margin: 0;
 }
+
+
+/*  футер */
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    background: #252525 url("../img/barbershop-footer.png");
+    color: #ffffff;
+}
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+.social-btn{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+
+
+
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk{
+    background-position: 1px -231px;
+}
+
+.social-btn-fb {
+
+    background-position: 1px -149px;
+}
+
+.social-btn-inst {
+
+    background-position: 1px -191px;
+}
+
+
+
+.social-btn-vk:hover {
+
+    background-position: 6px -263px;
+}
+
+.social-btn-fb:hover {
+
+    background-position: 6px -112px;
+}
+
+.social-btn-inst:hover {
+
+    background-position: 6px -55px;
+}
+
+.footer-copyright {
+    float: right;
+    max-width: 180px;}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+.sprite-Layer-29 {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-Shape-2-copy {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -42px;
+}
+
+
+
+
+
