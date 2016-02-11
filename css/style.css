@@ -25,7 +25,7 @@ ul {
 }
 
 h1{
-    line-height: 40px;
+    line-height: 36px;
     color: #000000;
     margin: 0;
     margin-bottom: 20px;
@@ -68,7 +68,7 @@ body.index {
 .main-header {
     min-height: 70px;
     background-color: #000000;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
     color: #ffffff;
 }
 
@@ -105,6 +105,7 @@ body.index {
     display: block;
     font-size: 16px;
     color: #ffffff;
+    line-height: 19px;
 }
 
 .main-navigation a:hover {
@@ -435,7 +436,7 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 .filter-checkbox, .filter-radio {
     padding-bottom: 15px;
     padding-left: 40px;
-    position: relative;
+
     font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
     font-size: 14px;
     line-height: 24px;
@@ -449,27 +450,44 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
     opacity: 0.5;
 }
 
-.filter-checkbox input, .filter-radio input{
+input[type="checkbox"], input[type="radio"]{
     display: none;
 }
-
-
-.filter-checkbox::before, .filter-radio::before{
-    content: '';
-    position: absolute;
-    left: 0px;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #000000;
-    display: block;
-    cursor: pointer;
-    background: url("../img/sprite.png");
-    background-position: -7px -7px;
+input[type="checkbox"] + label, input[type="radio"] + label{
+position: relative;
 
 }
 
-.filter-radio::before{
-    border-radius: 50%;
+input[type="checkbox"] + label::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+     background-image: url("../img/checkbox-sprite.png") no-repeat;
+    background-position: -10px -50px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+input[type="checkbox"]:checked + label::before{
+    background-position: -10px -10px;
+}
+
+input[type="radio"] + label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/checkbox-sprite.png") no-repeat;
+    background-position: -10px -90px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+input[type="radio"]:checked + label::before{
+   background-position: -10px -130px;
 }
 
 
@@ -500,6 +518,9 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
     margin-right:0 ;
 }
 
+.catalog-item:hover{
+    box-shadow: 0 0 25px rgba(0,1,1,0.3);
+}
 
 a.catalog-item-title{
     font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
@@ -521,14 +542,16 @@ a.catalog-item-title{
 .catalog-item-buy{
     padding-left: 15px;
     font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
-    font-size: 14px;
+
     line-height: 24px;
     padding-bottom: 15px;
+    font-size: 0;
 
 }
 
 span.price{
 padding: 10px 23px;
+    font-size: 14px;
 }
 
 
@@ -621,6 +644,7 @@ padding: 10px 23px;
     font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
+    margin-top: 20px;
 }
 .item-gallery {
     float: left;
@@ -684,7 +708,7 @@ padding: 10px 23px;
 
 .item-buy{
 margin-bottom: 70px;
-
+font-size: 0;
 }
 
 
@@ -696,7 +720,7 @@ margin-bottom: 70px;
     color: #000000;
     vertical-align: top;
     text-align: center;
-
+    font-size: 14px;
 }
 
 
@@ -893,12 +917,12 @@ h2{
 }
 
 .social-btn-vk{
-    background-position: 1px -231px;
+    background-position: -1px -229px;
 }
 
 .social-btn-fb {
 
-    background-position: 1px -149px;
+    background-position: 5px -149px;
 }
 
 .social-btn-inst {
@@ -910,12 +934,12 @@ h2{
 
 .social-btn-vk:hover {
 
-    background-position: 6px -263px;
+    background-position: 5px -261px;
 }
 
 .social-btn-fb:hover {
 
-    background-position: 6px -112px;
+    background-position: 10px -112px;
 }
 
 .social-btn-inst:hover {
