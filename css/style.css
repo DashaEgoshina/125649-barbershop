@@ -117,7 +117,7 @@ body.index {
 .main-navigation .active {
     position: relative;
 
-    background-color: none;
+    background-color: transparent;
 }
 
 .main-navigation .active a:hover {
@@ -249,7 +249,7 @@ body.index {
     margin-bottom: 35px;
     padding: 50px 80px;
     color: #000000;
-    background: url("../img/layer 17 copy.png") no-repeat center,
+    background: url("../img/Layer17copy.png") no-repeat center,
     #f8f5f2 url("../img/barbershop-index.png");
     font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 }
@@ -268,7 +268,7 @@ body.index {
 .index-content-title {
     margin: 0;
     margin-bottom: 25px;
-font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
     font-size: 24px;
     line-height: 29px;
 }
@@ -457,7 +457,7 @@ position: relative;
 
 }
 
-.filter-brands input[type="radio"] + label::before{
+.filter-brands input[type="checkbox"] + label::before{
     content: '';
     display: block;
     width: 20px;
@@ -467,15 +467,15 @@ position: relative;
     top:0;
     left: 0;
 }
-.filter-brands input[type="radio"]:checked+label::before {
+.filter-brands input[type="checkbox"]:checked+label::before {
     background: url("../img/sprite-checkbox.png") 0 -20px no-repeat;
 }
 
-.filter-brands input[type="radio"]:disabled+label::before {
+.filter-brands input[type="checkbox"]:disabled+label::before {
     background: url("../img/sprite-checkbox.png") 0 -80px no-repeat;
 }
 
-.filter-brands input[type="radio"]:checked:disabled+label::before {
+.filter-brands input[type="checkbox"]:checked:disabled+label::before {
     background: url("../img/sprite-checkbox.png") 0 -100px no-repeat;
 }
 
@@ -499,7 +499,6 @@ input:disabled +label:hover{
     display: block;
     width: 20px;
     height: 20px;
-    background: ;
     position: absolute;
     top:0;
     left: 0;
@@ -591,7 +590,7 @@ padding: 10px 23px;
     width: 45px;
     min-height: 25px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -619,7 +618,7 @@ padding: 10px 23px;
 .breadcrumbs {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow Bold";
+    font-family: "PT Sans Narrow Bold", sans-serif;
     list-style: none;
 }
 
@@ -694,7 +693,7 @@ padding: 10px 23px;
 }
 
 .item-small-img li:last-child {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 .item-info{
