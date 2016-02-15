@@ -422,6 +422,9 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 }
 
 
+.filter-items label {
+    padding-left: 40px;
+}
 
 .filter-items{
     width: 220px;
@@ -435,8 +438,6 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 
 .filter-checkbox, .filter-radio {
     padding-bottom: 15px;
-    padding-left: 40px;
-
     font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
     font-size: 14px;
     line-height: 24px;
@@ -444,11 +445,9 @@ font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 
 .filter-checkbox label:hover, .filter-radio label:hover{
     color: #663d15;
+    cursor: pointer;
 }
 
-.filter-checkbox:disabled, .filter-radio:disabled{
-    opacity: 0.5;
-}
 
 input[type="checkbox"], input[type="radio"]{
     display: none;
@@ -458,36 +457,62 @@ position: relative;
 
 }
 
-input[type="checkbox"] + label::before{
+.filter-brands input[type="radio"] + label::before{
     content: '';
     display: block;
     width: 20px;
     height: 20px;
-     background-image: url("../img/checkbox-sprite.png") no-repeat;
-    background-position: -10px -50px;
+    background: url("../img/sprite-checkbox.png") 0 0 no-repeat;
     position: absolute;
     top:0;
     left: 0;
 }
-
-input[type="checkbox"]:checked + label::before{
-    background-position: -10px -10px;
+.filter-brands input[type="radio"]:checked+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -20px no-repeat;
 }
 
-input[type="radio"] + label::before {
+.filter-brands input[type="radio"]:disabled+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -80px no-repeat;
+}
+
+.filter-brands input[type="radio"]:checked:disabled+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -100px no-repeat;
+}
+
+input:disabled +label{
+    color: #aba9a7;
+
+}
+input:disabled +label:hover{
+    color: #aba9a7;
+    cursor: default;
+
+}
+
+
+.filter-group input[type="radio"]:checked + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -60px no-repeat;
+}
+
+.filter-group input[type="radio"] + label::before {
     content: '';
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url("../img/checkbox-sprite.png") no-repeat;
-    background-position: -10px -90px;
+    background: ;
     position: absolute;
     top:0;
     left: 0;
+    background: url("../img/sprite-checkbox.png") 0 -40px no-repeat;
 }
 
-input[type="radio"]:checked + label::before{
-   background-position: -10px -130px;
+.filter-group input[type="radio"]:disabled + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -120px no-repeat;
+    color: #aeacaa;
+}
+
+.filter-group input[type="radio"]:disabled:checked + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -140px no-repeat;
 }
 
 
@@ -934,7 +959,7 @@ h2{
 
 .social-btn-vk:hover {
 
-    background-position: 5px -261px;
+    background-position: 5px -260px;
 }
 
 .social-btn-fb:hover {
