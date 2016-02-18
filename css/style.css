@@ -249,7 +249,7 @@ body.index {
     margin-bottom: 35px;
     padding: 50px 80px;
     color: #000000;
-    background: url("../img/Layer17copy.png") no-repeat center,
+    background: url("../img/layer17copy.png") no-repeat center,
     #f8f5f2 url("../img/barbershop-index.png");
     font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
 }
@@ -1032,7 +1032,7 @@ display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-display: none;
+    display: none;
 
     width: 766px;
     height: 561px;
@@ -1126,7 +1126,7 @@ margin-bottom: -20px;
 }
 
 input[type="password"] + label::after{
-    background: url("../img/User.png") no-repeat 0 0;
+    background: url("../img/user.png") no-repeat 0 0;
     content: '';
     display: block;
     width: 20px;
@@ -1138,7 +1138,7 @@ input[type="password"] + label::after{
 
 
 input[type="password"] + label::before{
-    background: url("../img/Locked.png") 0 0 no-repeat;
+    background: url("../img/locked.png") 0 0 no-repeat;
     content: '';
     display: block;
     width: 20px;
